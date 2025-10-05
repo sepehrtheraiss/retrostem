@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RetroStem — Home</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#1e3a4d; color:#fff; line-height:1.6; }
+    header { background:#0a1a3a; padding:16px 40px; display:flex; justify-content:space-between; align-items:center; }
+    header .logo a { color:#fff; text-decoration:none; font-weight:bold; font-size:1.2rem; }
+    header nav a { color:#fff; margin-left:20px; text-decoration:none; font-size:0.95rem; }
+    header nav a:hover { text-decoration:underline; }
+
+    /* Hero */
+    .hero { text-align:center; background:url('background-pattern.png') no-repeat center center/cover; padding:100px 20px 60px; position:relative; }
+    .hero img { max-width:800px; width:100%; border-radius:16px; display:block; margin:0 auto; }
+    .hero h1 { margin-top:20px; color:#fff; font-size:2.8rem; font-weight:300; }
+    .hero h1 em { font-style:italic; font-weight:600; }
+    .hero-text { margin-top:30px; font-size:1.15rem; color:#fff; max-width:700px; margin-left:auto; margin-right:auto; }
+    .hero .cta { display:inline-block; margin-top:28px; background:#f3eecb; color:#333; padding:14px 34px; border-radius:30px; border:none; cursor:pointer; font-weight:bold; font-size:1rem; text-decoration:none; }
+    .hero .cta:hover { background:#fef9e7; }
+
+    /* Contact */
+    #contact { padding:80px 20px; text-align:center; max-width:900px; margin:0 auto; }
+    #contact h2 { font-size:2rem; margin-bottom:20px; color:#f7e9b5; }
+    form { background:#f3eecb; color:#333; max-width:600px; margin:0 auto; padding:40px; border-radius:20px; text-align:left; }
+    form label { display:block; font-size:0.9rem; margin:10px 0 6px; color:#222; }
+    form input, form textarea { width:100%; padding:12px; border:none; border-radius:20px; margin-bottom:20px; font-size:1rem; }
+    form textarea { min-height:120px; resize:vertical; }
+    form button { background:#546d76; color:#fff; padding:12px 30px; border:none; border-radius:20px; cursor:pointer; font-size:1rem; }
+    form button:hover { background:#435960; }
+
+    footer { background:#0a1a3a; padding:40px 20px; text-align:center; font-size:0.9rem; margin-top:60px; }
+    footer .links { margin-top:10px; }
+    footer .links a { color:#fff; margin:0 8px; text-decoration:none; font-size:0.9rem; }
+    footer .links a:hover { text-decoration:underline; }
+    footer .email { margin-top:10px; color:#ccc; font-size:0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">RetroStem</a></div>
+    <nav>
+      <a href="course_detail.html">Course Detail</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/sraissia/">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>We don't just teach; we <em>mentor</em></h1>
+    <img src="Assets/retrostem_banner.jpeg" alt="STEM Collage" />
+    <div class="hero-text">
+    <p>Promoting STEM through retrogaming. Unlike other institutions, students will be able to be self-sufficient and tackle new problems with ease in a short timeframe.</p>
+    <a class="cta" href="course_detail.html">LEARN MORE</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="fname">First Name (required)</label>
+      <input type="text" id="fname" name="fname" placeholder="First Name" required>
+
+      <label for="lname">Last Name (required)</label>
+      <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+
+      <label for="email">Email (required)</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message (required)</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">SEND</button>
+    </form>
+  </section>
+
+  <footer>
+    <div>RetroStem</div>
+    <div class="links">
+      <a href="#">Review</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+    <div class="email">info@retrostem.com</div>
+  </footer>
+</body>
+</html>

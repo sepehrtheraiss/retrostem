@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RetroStem — Course Detail</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#1e3a4d; color:#fff; line-height:1.6; }
+    header { background:#0a1a3a; padding:16px 40px; display:flex; justify-content:space-between; align-items:center; }
+    header .logo { font-weight:bold; font-size:1.2rem; }
+    header nav a { color:#fff; margin-left:20px; text-decoration:none; font-size:0.95rem; }
+    header nav a:hover { text-decoration:underline; }
+
+    /* Hero */
+    .hero { text-align:center; position:relative; background:url('binary-bg.png') no-repeat center/cover;  overflow:hidden; }
+    .hero h1 { font-size:2.8rem; font-weight:600; margin:0; color:#fff; text-shadow:0 3px 6px rgba(0,0,0,0.6); position:relative; z-index:2; }
+    .hero h1 em { font-style:italic; }
+
+    .intro { text-align:center; margin:30px auto; max-width:700px; font-size:1.05rem; color:#d1e0e8; }
+    .hint { text-align:center; margin-bottom:40px; font-size:1.05rem; color:#ff7474; }
+
+    /* Circles section */
+    .courses { display:grid; grid-template-columns:1fr 1fr; gap:40px; max-width:1000px; margin:0 auto; padding:40px 20px; }
+    .col h2 { text-align:center; margin-bottom:10px; font-size:1.8rem; }
+    .col p { text-align:center; margin-top:0; margin-bottom:20px; font-size:0.95rem; color:#ddd; }
+    .levels { display:flex; flex-direction:column; gap:30px; align-items:center; background:linear-gradient(to bottom, #8cf38c, #f6eb75, #f06855); padding:30px 20px; border-radius:30px; }
+    .circle { width:180px; height:180px; border-radius:50%; overflow:hidden; border:4px solid #fff; cursor:pointer; background:#333; display:flex; align-items:center; justify-content:center; }
+    .circle img { width:100%; height:100%; object-fit:cover; }
+    .circle-label { margin-top:6px; font-size:0.9rem; }
+
+    /* Modal */
+    .modal { position:fixed; inset:0; display:none; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:100; }
+    .modal:target { display:flex; }
+    .modal-content { background:#f3eecb; color:#222; padding:20px; border-radius:16px; max-width:800px; width:90%; position:relative; text-align:center; }
+    .modal-content h3 { margin-top:0; font-size:1.6rem; color:#0a1a3a; }
+    .close { position:absolute; top:10px; right:16px; text-decoration:none; font-size:1.5rem; color:#333; }
+    .info-boxes { display:flex; gap:20px; margin:20px 0; }
+    .info-box { flex:1; background:#0a1a3a; color:#fff; padding:16px; border-radius:8px; font-size:0.95rem; }
+    .info-box a { color:#ffea80; text-decoration:underline; }
+    ul { text-align:left; color:#222; margin:20px auto; max-width:600px; }
+
+    /* Industry Ready */
+    .industry { text-align:center; padding:80px 20px; }
+    .industry h2 { font-size:2rem; margin-bottom:20px; }
+    .industry img { max-width:400px; width:100%; border-radius:16px; }
+
+    footer { background:#0a1a3a; padding:40px 20px; text-align:center; font-size:0.9rem; }
+    footer .links { margin-top:10px; }
+    footer .links a { color:#fff; margin:0 8px; text-decoration:none; font-size:0.9rem; }
+    footer .links a:hover { text-decoration:underline; }
+    footer .email { margin-top:10px; color:#ccc; font-size:0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html" style="color:#fff; text-decoration:none;">RetroStem</a></div>
+    <nav>
+      <a href="course_detail.html">Course Detail</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/sraissia/">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Choose <em>YOUR</em> Path</h1>
+  </section>
+
+  <div class="intro">
+    <p>Our introduction to programming is embedded into the projects.<br>No need for a long weeks of boring sessions to learn basics.<br>Each session students get to firsthand create something new that’s interactive.</p>
+  </div>
+  <div class="hint">Click on any circle to learn more</div>
+
+  <!-- Two Columns with Circles -->
+  <section class="courses">
+    <div class="col">
+      <h2>Games</h2>
+      <p>Coding + Mathematics and Physics</p>
+      <div class="levels">
+        <a href="#modal-g1" class="circle"><img src="Assets/brickbreaker.png" alt="Game Level 1"></a>
+        <div class="circle-label">Level 1</div>
+        <a href="#modal-g2" class="circle"><img src="Assets/fighting.png" alt="Game Level 2"></a>
+        <div class="circle-label">Level 2</div>
+        <a href="#modal-g3" class="circle"><img src="Assets/platform.png" alt="Game Level 3"></a>
+        <div class="circle-label">Level 3</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h2>Robotics</h2>
+      <p>Coding + Electrical and Hardware Engineering</p>
+      <div class="levels">
+        <a href="#modal-r1" class="circle"><img src="Assets/breadboard.png" alt="Robotics Level 1"></a>
+        <div class="circle-label">Level 1</div>
+        <a href="#modal-r2" class="circle"><img src="Assets/vehicle.jpg" alt="Robotics Level 2"></a>
+        <div class="circle-label">Level 2</div>
+        <a href="#modal-r3" class="circle"><img src="Assets/drone.png" alt="Robotics Level 3"></a>
+        <div class="circle-label">Level 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Ready -->
+  <section class="industry">
+    <h2>Industry Ready</h2>
+    <img src="Assets/faang.png" alt="Industry Logos">
+  </section>
+
+  <!-- Modals with structured text -->
+  <div id="modal-g1" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h3>Level 1: Computer Science and Game Fundamentals</h3>
+      <div class="info-boxes">
+        <div class="info-box"><strong>PURPOSE</strong><br>Get student’s feet wet – <a href="Assets/curriculum_game_level01.pdf" target="_blank">curriculum</a></div>
+        <div class="info-box"><strong>END GOAL</strong><br>Make a super brick breaker</div>
+      </div>
+      <ul>
+        <li>Students will learn basic <strong>JavaScript, HTML, CSS</strong></li>
+        <li>Exposure to <strong>Classes, Functions, Library, Data Structure & Event Handling</strong></li>
+        <li>Basics of <strong>Game design, Geometry & Physics</strong></li>
+        <li><strong>BONUS:</strong> Discrete Math & Linear Algebra</li>
+      </ul>
+    </div>
+  </div>
+  <div id="modal-g2" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h3>Level 2: Game Development & Advanced Programming</h3>
+      <div class="info-boxes">
+        <div class="info-box"><strong>PURPOSE</strong><br>For student to get ready to lead the project – <a href="curriculum-game2.pdf" target="_blank">curriculum</a></div>
+        <div class="info-box"><strong>END GOAL</strong><br>Make an online two-player fighting game</div>
+      </div>
+      <ul>
+        <li>Students will learn how to leverage <strong>Frameworks</strong> to make coding easier</li>
+        <li>Students will learn about <strong>Networking</strong> and different methods of communication</li>
+        <li>Students will get exposed to <strong>Github, unit testing & backend server</strong></li>
+        <li><strong>BONUS:</strong> AI + custom character design</li>
+      </ul>
+    </div>
+  </div>
+  <div id="modal-g3" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h3>Level 3: Advanced Game Physics and Design</h3>
+      <div class="info-boxes">
+        <div class="info-box"><strong>PURPOSE</strong><br>Master game engines and design – <a href="curriculum-game3.pdf" target="_blank">curriculum</a></div>
+        <div class="info-box"><strong>END GOAL</strong><br>Build a multi-level platformer</div>
+      </div>
+      <ul>
+        <li>Game optimization and <strong>rendering</strong></li>
+        <li>Advanced <strong>geometry and physics engines</strong></li>
+        <li>Creative level design principles</li>
+      </ul>
+    </div>
+  </div>
+  <div id="modal-r1" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h3>Level 1: Robotics Fundamentals</h3>
+      <div class="info-boxes">
+        <div class="info-box"><strong>PURPOSE</strong><br>Get student’s feet wet – <a href="Assets/curriculum_robotics_level01.pdf" target="_blank">curriculum</a></div>
+        <div class="info-box"><strong>END GOAL</strong><br>Make Whack-A-Mole & Simon Says game</div>
+      </div>
+      <ul>
+      <li>Students will learn<strong>C++</strong> at very basic level </li> 
+      <li>Students will get exposed to <strong>logic, math, function, structure, libraries and array</strong></li>
+      <li>Students will learn about circuit and programing input and output devices</li>
+      <li>For ease of usability, project will taught using virtual Arduino</li>
+      <li><strong>Bonus:</strong> 3D printing & PCB(printed circuit board)</li>
+      </ul>
+    </div>
+  </div>
+  <div id="modal-r2" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h3>Level 2: Robotics & Automation</h3>
+      <div class="info-boxes">
+        <div class="info-box"><strong>PURPOSE</strong><br>Expand into sensors & automation – <a href="curriculum-robotics2.pdf" target="_blank">curriculum</a></div>
+        <div class="info-box"><strong>END GOAL</strong><br>Build an obstacle-avoiding robot</div>
+      </div>
+      <ul>
+        <li>Working with <strong>motors & sensors</strong></li>
+        <li>Programming for automation</li>
+        <li>Students will learn about <strong>waves and real world applications</strong> (e.g. Infrared, wireless and ultra sonic)</li>
+        <li>Students will learn about different types of <strong>communication protocols</strong>(I2C, SPI, UART)</li>
+      </ul>
+    </div>
+  </div>
+  <div id="modal-r3" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h3>Level 3: Advanced Robotics & AI</h3>
+      <div class="info-boxes">
+        <div class="info-box"><strong>PURPOSE</strong><br>Introduce AI and drone robotics – <a href="curriculum-robotics3.pdf" target="_blank">curriculum</a></div>
+        <div class="info-box"><strong>END GOAL</strong><br>Create a drone with basic autonomy</div>
+      </div>
+      <ul>
+        <li>Intro to <strong>AI algorithms</strong> for robotics</li>
+        <li>Drone mechanics and flight control</li>
+        <li>Autonomous navigation basics</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div>RetroStem</div>
+    <div class="links">
+      <a href="#">Review</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+    <div class="email">info@retrostem.com</div>
+  </footer>
+</body>
+</html>
