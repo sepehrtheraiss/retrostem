@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 aee3e5bbec8c5482b1236f7a6d2826012462e05d Sepehr Raissian <sepehrtheraiss@gmail.com> 1732648042 -0800	commit (initial): init
+aee3e5bbec8c5482b1236f7a6d2826012462e05d b56c16aa53adc42d62c35df94dc40542a3b6befb Sepehr Raissian <sepehrtheraiss@gmail.com> 1732648919 -0800	commit: day 1
+b56c16aa53adc42d62c35df94dc40542a3b6befb eb6cb8711608e90668621ac10489b3c8c5ff2f51 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732661181 -0800	commit (amend): day 1
+eb6cb8711608e90668621ac10489b3c8c5ff2f51 3c96fe983fd7bb5097e7a079092db05030d15a30 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732665091 -0800	commit (amend): day 1
+3c96fe983fd7bb5097e7a079092db05030d15a30 bbd1e03148586d629c91975d4d097b506ed128cb Sepehr Raissian <sepehrtheraiss@gmail.com> 1732680660 -0800	commit: day 2
+bbd1e03148586d629c91975d4d097b506ed128cb 0bddf1f0f3a38b2a78f9978d74bd05890ce1b6fb Sepehr Raissian <sepehrtheraiss@gmail.com> 1732680839 -0800	rebase (continue) (finish): refs/heads/main onto b90b8f7f514c41ece65b8eff7010c2c418818c91
+0bddf1f0f3a38b2a78f9978d74bd05890ce1b6fb 2c94596357bec1a0094ac332eec10661184cd3d6 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732681135 -0800	commit: button and event handling
+2c94596357bec1a0094ac332eec10661184cd3d6 59164ff154056428cffef15d1ed3aceb5c9f5fba Sepehr Raissian <sepehrtheraiss@gmail.com> 1732681164 -0800	rebase (finish): refs/heads/main onto 64684948a4f21fcea7f435d75c01728b771433bf
+59164ff154056428cffef15d1ed3aceb5c9f5fba d31739597a7e019d6d54098f49ed6c6ca9502a58 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732681285 -0800	commit (amend): day 2
+d31739597a7e019d6d54098f49ed6c6ca9502a58 3187c1d4bfd62807a17428816b424b73862d5bbf Sepehr Raissian <sepehrtheraiss@gmail.com> 1732725119 -0800	commit: day 3
+3187c1d4bfd62807a17428816b424b73862d5bbf 9ea4e59d04749ff0ba34b9f409d9e9dbc2cf507e Sepehr Raissian <sepehrtheraiss@gmail.com> 1732725335 -0800	rebase (continue) (finish): refs/heads/main onto aee3e5bbec8c5482b1236f7a6d2826012462e05d
+9ea4e59d04749ff0ba34b9f409d9e9dbc2cf507e 574ca68aebd2e58d150c6abcf541c57dbd6c1930 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732725435 -0800	commit (amend): day 3
+574ca68aebd2e58d150c6abcf541c57dbd6c1930 4d9321f7e80c7455d00f10be3e215c194fb26e13 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732726593 -0800	commit: day 4
+4d9321f7e80c7455d00f10be3e215c194fb26e13 7f582a4f437877ebcd3b74f5af2dafec8ef2c440 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732726705 -0800	rebase (continue) (finish): refs/heads/main onto 2f15cefb9e253e98f6ccafa45a524386fd79807c
+7f582a4f437877ebcd3b74f5af2dafec8ef2c440 2883ac7982358bdf3c7f1b3533094ea57d0cd978 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732727486 -0800	commit: day 5
+2883ac7982358bdf3c7f1b3533094ea57d0cd978 71a80231a29e32a0564064c09f586b0dc6075a50 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732727853 -0800	rebase (continue) (finish): refs/heads/main onto aee3e5bbec8c5482b1236f7a6d2826012462e05d
+71a80231a29e32a0564064c09f586b0dc6075a50 dc2ca9cb0c0cf1a6b443f1311fa3774a14041406 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732728139 -0800	commit (amend): day 5
+dc2ca9cb0c0cf1a6b443f1311fa3774a14041406 dfc54433349a27b612b0ee98332fede842904a06 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732730332 -0800	commit: day 6
+dfc54433349a27b612b0ee98332fede842904a06 4b155075576278c2cab1c6e2afccd3e30affbb42 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732734720 -0800	commit (amend): day 6
+4b155075576278c2cab1c6e2afccd3e30affbb42 7b901f976a77c5289042fe31ae3bea55934b7976 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732736145 -0800	commit: day 7
+7b901f976a77c5289042fe31ae3bea55934b7976 fe6439372362c198813d324f9ef9ae83d8d23749 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732736582 -0800	commit: day 8
+fe6439372362c198813d324f9ef9ae83d8d23749 be7a235af927044b6a50594efc70dc13c6005cd1 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732736744 -0800	commit: day 9
+be7a235af927044b6a50594efc70dc13c6005cd1 9db04a8d375ec8b9ff2819294756d1daa9d8e1a1 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732736969 -0800	rebase (continue) (finish): refs/heads/main onto 7b901f976a77c5289042fe31ae3bea55934b7976
+9db04a8d375ec8b9ff2819294756d1daa9d8e1a1 5f6eeba5ce6738991fbc8b4c9ed85223505c05e9 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732737086 -0800	rebase (continue) (finish): refs/heads/main onto 7b901f976a77c5289042fe31ae3bea55934b7976
+5f6eeba5ce6738991fbc8b4c9ed85223505c05e9 f03291e497351280f19b5afcb47303bc85693136 Sepehr Raissian <sepehrtheraiss@gmail.com> 1732756158 -0800	commit: day 10
